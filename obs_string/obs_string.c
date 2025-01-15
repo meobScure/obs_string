@@ -325,15 +325,3 @@ int obs_strncmp(const char *str1, const char *str2, size_t n) {
 
     return 0;
 }
-int main() {
-    char input[] = "Hello, world! This is a test.";
-    const char *delim = " ,.!";  // Delimiters: space, comma, period, exclamation mark
-
-    char *token = my_strtok(input, delim);
-    while (token != NULL) {
-        printf("Token: %s\n", token);
-        token = my_strtok(NULL, delim);  // Continue tokenizing the same string
-    }
-
-    return 0;
-}
